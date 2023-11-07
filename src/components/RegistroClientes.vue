@@ -109,7 +109,7 @@ export default {
   methods: {
     guardar() {
       axios
-        .post("http://localhost:8080/api/usuarios", {
+        .post("https://quickchangecol-production.up.railway.app/api/usuarios", {
 
        nombres:this.nombres,
       apellidos:this.apellidos,
@@ -152,7 +152,7 @@ export default {
     consultar() {
       
       axios
-        .get('http://localhost:8080/api/usuarios/'+this.id_usuario)
+        .get('https://quickchangecol-production.up.railway.app/api/usuarios/'+this.id_usuario)
         .then((response) => {
           // Actualizar los campos del formulario con los datos del estudiante consultado
          
@@ -177,7 +177,7 @@ export default {
     actualizar() {
       
       axios
-        .put("http://localhost:8080/api/usuarios/actualizar/"+this.id_usuario, {
+        .put("https://quickchangecol-production.up.railway.app/api/usuarios/actualizar/"+this.id_usuario, {
           
        nombres:this.nombres,
       apellidos:this.apellidos,

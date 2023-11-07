@@ -39,7 +39,7 @@ export default {
   methods: {
     login() {
         axios
-        .post("http://localhost:8080/api/usuarios/login", {
+        .post("https://quickchangecol-production.up.railway.app/api/usuarios/login", {
           username: this.username,
           contrasena: this.contrasena,
         })
