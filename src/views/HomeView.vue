@@ -1,11 +1,13 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/banner.jpg">
+    <img class="img-home" alt="Vue logo" src="../assets/banner.jpg">
     <div class="texto-home">
       <h1>EXPLORA LO DESCONOCIDO</h1>
     </div>
     
     <HelloWorld msg=""/>
+
+    <DesginFooter class="designfooter"/>
     
   </div>
 </template>
@@ -15,19 +17,20 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import DesginFooter from '@/components/DesignFooter.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    HelloWorld,
+    DesginFooter
   }
 }
 </script>
 
 <style>
 
-.home img{
+.img-home{
   width: 100%;
   height: 70vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
@@ -41,4 +44,10 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.designfooter{
+  margin-top: 20%;
+}
+
+
 </style>
