@@ -4,8 +4,8 @@
     <div class="texto-home">
       <h1>EXPLORA LO DESCONOCIDO</h1>
     </div>
-    
-    <HelloWorld msg=""/>
+    <HelloWorld class="helloworld"/>
+ 
 
     <DesginFooter class="designfooter"/>
     
@@ -19,6 +19,7 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DesginFooter from '@/components/DesignFooter.vue';
 
+
 export default {
   name: 'HomeView',
   components: {
@@ -26,6 +27,7 @@ export default {
     DesginFooter
   }
 }
+
 </script>
 
 <style>
