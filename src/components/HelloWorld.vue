@@ -97,7 +97,8 @@ export default {
   margin-bottom:0;
 }
 #titulo1{
-  width:20%;
+  display: flex;
+  width:100%;
   margin-top:25px;
   margin-bottom: 25px;
 }
